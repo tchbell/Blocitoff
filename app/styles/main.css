@@ -1,0 +1,32 @@
+/*Main container styles */
+.container{
+    width: 800px;
+    height: 500px;
+    border: 1px black solid;
+    margin: 0 auto;
+}
+/*Navbar styles */
+.navbar{
+    border: 1px red solid;
+}
+.navbar ul{
+    list-style-type: none;
+    margin:0;
+    padding:0;
+    height: 100px;
+}
+.navbar li{
+    display:inline;
+}
+
+/* Tasks */
+.tasks{
+    width:760px;
+    height:300px;
+    border: 1px green solid;
+    margin: 0 auto;
+}
+
+.tasks li{
+    list-style-type: none;
+}

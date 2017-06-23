@@ -1,9 +1,14 @@
-/*Main container styles */
-.container{
+html{
+    height: 100%;
+}
+body{
     width: 800px;
-    height: 500px;
     border: 1px black solid;
     margin: 0 auto;
+}
+/*Main container styles */
+.container{
+    
 }
 /*Navbar styles */
 .navbar{
@@ -13,16 +18,18 @@
     list-style-type: none;
     margin:0;
     padding:0;
-    height: 100px;
+    height: 50px;
 }
 .navbar li{
     display:inline;
+    border: 1px black solid;
+    text-decoration: none;
+    color:black;
 }
 
 /* Tasks */
 .tasks{
     width:760px;
-    height:300px;
     border: 1px green solid;
     margin: 0 auto;
 }

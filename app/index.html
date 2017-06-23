@@ -6,6 +6,15 @@
     <link rel="stylesheet" href="/styles/main.css">
 </head>
 <body>
+    <h1>Blocitoff</h1>
+    <nav class="navbar">
+        <ul>
+            <a ui-sref='home'><li>Active</li></a>
+            <a href= "#"><li>Expired</li></a>
+            <a href= "#"><li>Completed</li></a>
+            <a ui-sref='addTask'><li>Add Task</li></a>
+        </ul>
+    </nav>
     <ui-view></ui-view>
     <!-- Angular -->
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>

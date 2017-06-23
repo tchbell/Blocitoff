@@ -1,16 +1,8 @@
+<h2>Active</h2>
 <div class = "container">
-    <h1>Blocitoff</h1>
-    <nav class="navbar">
-        <ul>
-            <li>Active</li>
-            <li>Expired</li>
-            <li>Completed</li>
-            <li>Add Task</li>
-        </ul>
-    </nav>
     <div class="tasks">
         <ul>
-            <li ng-repeat= "task in home.tasks">{{task.$value}}</li>
+            <li ng-repeat= "task in home.tasks" class="task">{{task.$value}}</li>
         </ul>
     </div>
 </div>

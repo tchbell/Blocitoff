@@ -19,7 +19,19 @@
                 controllerAs: 'home',
                 templateUrl: 'templates/add_tasks.html'
                    
+            })
+            .state('completed', {
+                url: '/completed',
+                templateUrl: 'templates/completed.html'
+            })
+            .state('expired', {
+                url: '/expired',
+                controller: "HomeCtrl",
+                controllerAs: 'home', 
+                templateUrl: 'templates/expired.html'
             });
+        
+        
      }
      
      angular

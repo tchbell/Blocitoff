@@ -4,19 +4,42 @@
         var ref = firebase.database().ref().child("tasks");
         var tasks = $firebaseArray(ref);
         
+        var refTwo = firebase.database().ref().child("tasks").child("Expired");
+        var expTasks = $firebaseArray(refTwo);
+        
+        var refThree = firebase.database().ref().child('tasks').child('Active');
+        var activeTasks = $firebaseArray(refThree);
+        
         
        
         return {
             all: tasks,
             
+            allActive:activeTasks,
+            
+            allExp: expTasks,
+            
             addTask: function(){
-                    tasks.$add({ task: this.taskName }).then(function(ref) {
+                    activeTasks.$add({ task: this.taskName, timeCreated: (Date.now())}).then(function(ref) {
                       var id = ref.key;
                       console.log("added record with id " + id);
                       tasks.$indexFor(id); // returns location in the array
                     });
-                
-            }
+               alert(this.taskName + " has been added to active tasks");
+                this.taskName = "";
+            },
+            
+            
+            createdAt: function(task){
+                if(Date.now() - task.timeCreated > 5000){
+                    console.log(task.task + " has expired");
+                    
+                    expTasks.$add(task);
+                    tasks.$remove(task);
+                };
+            },
+            
+            
         };
 
     }

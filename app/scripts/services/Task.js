@@ -21,13 +21,9 @@
             allExp: expTasks,
             
             addTask: function(){
-                    activeTasks.$add({ task: this.taskName, timeCreated: (Date.now())}).then(function(ref) {
-                      var id = ref.key;
-                      console.log("added record with id " + id);
-                      tasks.$indexFor(id); // returns location in the array
-                    });
-               alert(this.taskName + " has been added to active tasks");
-                this.taskName = "";
+                    activeTasks.$add({ task: this.taskName, timeCreated: (Date.now()), priority: this.priority})
+                    alert(this.taskName + " has been added to active tasks");
+                    this.taskName = "";
             },
             
             tooLong: function(task){

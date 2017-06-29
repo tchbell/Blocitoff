@@ -2,7 +2,7 @@
 <div class = "container">
     <div class="tasks">
         <ul>
-            <li ng-repeat= "task in home.activeTasks" class="task" ng-hide="home.expire(task)">{{task.task}}</li>
+            <li ng-repeat= "task in home.activeTasks | orderBy : 'priority'" class="task">{{task.task}} {{task.priority}}</li>
         </ul>
     </div>
 </div>

@@ -3,5 +3,12 @@
     <fieldset class="taskInput">
         <input type="text" id="name" ng-model= "home.taskName" placeholder= "Enter Task" required>
     </fieldset>
+    <fieldset class="priority"> 
+        <select ng-model="home.priority">
+            <option value="High">High</option>
+            <option value="Medium">Medium</option>
+            <option value="Low">Low</option>
+        </select>
+    </fieldset>
     <input type="submit" class="add-btn" value= "Add">
 </form>

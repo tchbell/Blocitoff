@@ -2,7 +2,7 @@
 <div class = "container">
     <div class="tasks">
         <ul>
-            <li ng-repeat= "task in home.activeTasks | orderBy : 'priority'" class="task">{{task.task}} {{task.priority}}</li>
+            <li ng-repeat= "task in home.activeTasks | orderBy : 'priority'" class="task">{{task.task}} {{task.priority}}<button ng-click= "home.complete(task)">Completed</button></li>
         </ul>
     </div>
 </div>

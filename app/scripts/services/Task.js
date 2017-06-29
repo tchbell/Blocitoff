@@ -10,6 +10,9 @@
         //Active Tasks
         var refThree = firebase.database().ref().child('tasks').child('Active');
         var activeTasks = $firebaseArray(refThree);
+        //Completed Tasks 
+        var refFour = firebase.database().ref().child('tasks').child('Completed');
+        var completedTasks= $firebaseArray(refFour);
         
         
        
@@ -19,6 +22,8 @@
             allActive:activeTasks,
             
             allExp: expTasks,
+            
+            allComplete: completedTasks,
             
             addTask: function(){
                     activeTasks.$add({ task: this.taskName, timeCreated: (Date.now()), priority: this.priority})
@@ -39,8 +44,14 @@
                     console.log(task.task + " has expired");
                     
                     expTasks.$add(task);
-                    tasks.$remove(task);
+                    activeTasks.$remove(task);
                 };
+            },
+            
+            complete: function(task){
+                    completedTasks.$add(task);
+                    activeTasks.$remove(task);
+                    alert(task.task + " has been completed");
             }
             
             

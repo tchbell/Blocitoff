@@ -8,6 +8,9 @@
         //Adding tasks
         this.addTask = Task.addTask;
     
+        //Completing Tasks
+        this.completedTasks = Task.allComplete;
+        this.complete = Task.complete;
 
 
         

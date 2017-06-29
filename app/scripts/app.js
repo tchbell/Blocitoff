@@ -22,6 +22,8 @@
             })
             .state('completed', {
                 url: '/completed',
+                controller: "HomeCtrl",
+                controllerAs: 'home',
                 templateUrl: 'templates/completed.html'
             })
             .state('expired', {

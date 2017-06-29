@@ -6,7 +6,6 @@
         this.expTasks = Task.allExp;
         
         //Adding tasks
-        this.taskName = null;
         this.addTask = Task.addTask;
     
 
@@ -14,6 +13,7 @@
         
         //Expired
         this.time = Task.createdAt;
+        this.expire = Task.tooLong;
 
         
     }

@@ -5,12 +5,12 @@
                 <div class="taskFormat taskLabel">Task Name</div>
                 <div class="taskFormat taskLabel">Task Priority</div>
             </div>
-        <li class="group" ng-repeat= "task in home.activeTasks | orderBy : '-priority'" class="task">
+        <li class="group" ng-repeat= "task in home.activeTasks | orderBy : 'priority'" class="task">
             
             <div class="taskContainer">
                 <div class="taskFormat">{{task.task}}</div>
                 <div class="taskFormat taskPriority">{{task.priority}}</div>
-                <button class = "taskFormat completeBtn" ng-click= "home.complete(task)">Complete</button>
+                <div class = "taskFormat completeBtn" ><div class="finishTask" ng-click= "home.complete(task)">Complete</div></div>
             </div>
         </li>
     </ul>

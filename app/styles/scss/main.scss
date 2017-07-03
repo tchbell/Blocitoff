@@ -7,7 +7,7 @@
 
 html{
     font-size:16px;
-    background-color:darkslategray;
+    background-color: slategrey;
 }
 body{
     background-color:white;
@@ -73,6 +73,7 @@ button.taskFormat.completeBtn {
                 width:33%;
                 display:inline;
                 float:left;
+                text-align:center;
         }   
 
         li{
@@ -82,6 +83,14 @@ button.taskFormat.completeBtn {
             text-decoration:line-through;
         }
     }
+
+.finishTask{
+    text-align:center;
+    border:1px solid black;
+    height:auto;
+    width:50%;
+    margin-bottom:5px;
+}
 /* Add tasks */
 fieldset{
         display:inline;

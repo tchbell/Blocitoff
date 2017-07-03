@@ -13,10 +13,24 @@
         this.complete = Task.complete;
 
 
-        
         //Expired
         this.time = Task.createdAt;
         this.expire = Task.tooLong;
+        
+        //State Select
+        this.options = [
+            {label:'Active', value: 'home'},
+            {label:'Expired', value:'expired'},
+            {label:'Completed', value:'completed'},
+            {label:'Add Task', value:'addTask'}
+        ];
+        
+        this.stateChangeFunction = function(){
+            console.log(this.states)
+            $state.go(this.states);
+        }
+        
+        
         
     
 

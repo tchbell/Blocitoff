@@ -93,6 +93,18 @@ fieldset{
     color:lightgray;
 }
 
-@media screen and (max-width: 805px){
+.stateMenu{
+    display:none;
+}
+
+@media screen and (max-width: 830px){
+    .stateMenu{
+        display:block;
+        font-size:2em;
+    }
+    
+    nav{
+        display:none;
+    }
     
 }

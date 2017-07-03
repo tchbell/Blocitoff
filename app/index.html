@@ -18,6 +18,11 @@
         </ul>
     </nav>
     
+    <div class="stateMenu" ng-controller = "HomeCtrl as home">
+        <p>Pick Menu To View</p>
+        <select ng-model= 'home.states' ng-options='opt.value as opt.label for opt in home.options' ng-change= "home.stateChangeFunction()"></select>
+    </div>
+    
     <ui-view></ui-view>
     <!-- Angular -->
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>

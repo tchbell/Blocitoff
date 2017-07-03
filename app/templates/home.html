@@ -1,8 +1,17 @@
 <h2>Active</h2>
-<div class = "container">
-    <div class="tasks">
-        <ul>
-            <li ng-repeat= "task in home.activeTasks | orderBy : 'priority'" class="task">{{task.task}} {{task.priority}}<button ng-click= "home.complete(task)">Completed</button></li>
-        </ul>
-    </div>
+<div class="tasks">
+    <ul>
+        <div class="labelContainer group">
+                <div class="taskFormat taskLabel">Task Name</div>
+                <div class="taskFormat taskLabel">Task Priority</div>
+            </div>
+        <li class="group" ng-repeat= "task in home.activeTasks | orderBy : '-priority'" class="task">
+            
+            <div class="taskContainer">
+                <div class="taskFormat">{{task.task}}</div>
+                <div class="taskFormat taskPriority">{{task.priority}}</div>
+                <button class = "taskFormat completeBtn" ng-click= "home.complete(task)">Complete</button>
+            </div>
+        </li>
+    </ul>
 </div>

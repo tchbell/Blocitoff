@@ -1,5 +1,5 @@
 (function(){
-    function HomeCtrl(Task, $timeout){
+    function HomeCtrl(Task, $timeout, $state){
         // Tasks
         this.tasks = Task.all;
         this.activeTasks = Task.allActive;
@@ -17,10 +17,12 @@
         //Expired
         this.time = Task.createdAt;
         this.expire = Task.tooLong;
+        
+    
 
         
     }
     angular
         .module('Blocitoff')
-        .controller('HomeCtrl', ['Task', '$timeout', HomeCtrl]);
+        .controller('HomeCtrl', ['Task', '$timeout','$state', HomeCtrl]);
 })();

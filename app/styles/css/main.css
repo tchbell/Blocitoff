@@ -1,0 +1,73 @@
+.group:after {
+  content: "";
+  display: table;
+  clear: both; }
+
+html {
+  font-size: 16px;
+  background-color: darkslategray; }
+
+body {
+  background-color: white;
+  width: 56%;
+  height: 600px;
+  margin: 0 auto;
+  padding: 1.25%;
+  font-size: 62.5%; }
+
+h1 {
+  font-size: 3.5em; }
+
+h2 {
+  font-size: 3em; }
+
+/*Navbar styles */
+.navbar {
+  width: 90%;
+  margin: 0 auto;
+  padding: 1.282051%; }
+  .navbar ul {
+    list-style-type: none;
+    text-align: center;
+    height: 50px; }
+    .navbar ul li {
+      font-size: 2em;
+      display: inline;
+      margin: 1.388888%;
+      padding: 1.2%;
+      text-decoration: none;
+      color: white;
+      background-color: gray; }
+    .navbar ul a {
+      text-decoration: none; }
+
+/* Tasks */
+button.taskFormat.completeBtn {
+  float: right; }
+
+.tasks {
+  width: 95%;
+  margin: 0 auto;
+  font-size: 1.5em; }
+  .tasks .taskLabel {
+    font-weight: bold;
+    margin-bottom: 10px; }
+  .tasks .taskFormat {
+    width: 33%;
+    display: inline;
+    float: left; }
+  .tasks li {
+    list-style-type: none; }
+  .tasks .completeTask {
+    text-decoration: line-through; }
+
+/* Add tasks */
+fieldset {
+  display: inline;
+  border: none;
+  font-size: 1.5em; }
+
+.dimFont {
+  color: lightgray; }
+
+/*# sourceMappingURL=main.css.map */

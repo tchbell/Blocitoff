@@ -8,7 +8,7 @@
         <li class="group" ng-repeat= "task in home.activeTasks | orderBy : 'priority'" class="task">
             
             <div class="taskContainer">
-                <div class="taskFormat">{{task.task}}</div>
+                <div class="taskFormat">{{task.task}}{{home.expire(task)}}</div>
                 <div class="taskFormat taskPriority">{{task.priority}}</div>
                 <div class = "taskFormat completeBtn" ><div class="finishTask" ng-click= "home.complete(task)">Complete</div></div>
             </div>

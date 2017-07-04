@@ -31,17 +31,9 @@
                     this.taskName = "";
             },
             
-            tooLong: function(task){
-                if(Date.now() - task.timeCreated > 5000){
-                console.log(task.task + " has expired");
-                return true;
-                };
-            },   
-            
-            
             createdAt: function(task){
                 if(Date.now() - task.timeCreated > 5000){
-                    console.log(task.task + " has expired");
+                    alert(task.task + " has expired");
                     
                     expTasks.$add(task);
                     activeTasks.$remove(task);

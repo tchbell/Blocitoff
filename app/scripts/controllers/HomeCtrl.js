@@ -14,8 +14,7 @@
 
 
         //Expired
-        this.time = Task.createdAt;
-        this.expire = Task.tooLong;
+        this.expire = Task.createdAt;
         
         //State Select
         this.options = [

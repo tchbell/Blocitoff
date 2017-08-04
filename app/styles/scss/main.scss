@@ -7,22 +7,27 @@
 
 html{
     font-size:16px;
-    background-color: slategrey;
+    background-image: url("/assets/bg-img-2.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 body{
     background-color:white;
     width: 56%; //800px
-    height:600px;
+    height:60em;
     margin: 0 auto;
     padding: 1.25%; //10px
     font-size: 62.5%; //1em = 10px
+    font-family: 'Righteous', cursive;
 }
 
 h1{
     font-size: 3.5em;
+    font-family: 'Playfair Display', serif;
 }
 h2{
     font-size: 3em;
+    font-family: 'Playfair Display', serif;
 }
 
 /*Navbar styles */
@@ -40,10 +45,11 @@ h2{
         font-size: 2em;
         display:inline;
         margin:1.388888%; // 10px
-        padding: 1.2%;
+        padding: 1.5%;
         text-decoration: none;
         color:white;
-        background-color:gray;
+        background-color:#3797C7;
+        border-radius: 45%;
     }
         a{
             text-decoration:  none;
@@ -71,7 +77,6 @@ button.taskFormat.completeBtn {
     
         .taskFormat{
                 width:33%;
-                display:inline;
                 float:left;
                 text-align:center;
         }   
@@ -86,11 +91,9 @@ button.taskFormat.completeBtn {
 
 .finishTask{
     text-align:center;
-    border:1px solid black;
-    height:auto;
-    width:50%;
     margin-bottom:5px;
 }
+
 /* Add tasks */
 fieldset{
         display:inline;
@@ -106,6 +109,7 @@ fieldset{
     display:none;
 }
 
+
 @media screen and (max-width: 830px){
     .stateMenu{
         display:block;
@@ -115,5 +119,12 @@ fieldset{
     nav{
         display:none;
     }
+
+    
+    .hidden{
+        display:none;
+        
+    }
+    
     
 }

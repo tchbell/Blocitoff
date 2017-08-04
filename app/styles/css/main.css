@@ -5,21 +5,26 @@
 
 html {
   font-size: 16px;
-  background-color: slategrey; }
+  background-image: url("/assets/bg-img-2.jpg");
+  background-size: cover;
+  background-repeat: no-repeat; }
 
 body {
   background-color: white;
   width: 56%;
-  height: 600px;
+  height: 60em;
   margin: 0 auto;
   padding: 1.25%;
-  font-size: 62.5%; }
+  font-size: 62.5%;
+  font-family: 'Righteous', cursive; }
 
 h1 {
-  font-size: 3.5em; }
+  font-size: 3.5em;
+  font-family: 'Playfair Display', serif; }
 
 h2 {
-  font-size: 3em; }
+  font-size: 3em;
+  font-family: 'Playfair Display', serif; }
 
 /*Navbar styles */
 .navbar {
@@ -34,10 +39,11 @@ h2 {
       font-size: 2em;
       display: inline;
       margin: 1.388888%;
-      padding: 1.2%;
+      padding: 1.5%;
       text-decoration: none;
       color: white;
-      background-color: gray; }
+      background-color: #3797C7;
+      border-radius: 45%; }
     .navbar ul a {
       text-decoration: none; }
 
@@ -54,7 +60,6 @@ button.taskFormat.completeBtn {
     margin-bottom: 10px; }
   .tasks .taskFormat {
     width: 33%;
-    display: inline;
     float: left;
     text-align: center; }
   .tasks li {
@@ -64,9 +69,6 @@ button.taskFormat.completeBtn {
 
 .finishTask {
   text-align: center;
-  border: 1px solid black;
-  height: auto;
-  width: 50%;
   margin-bottom: 5px; }
 
 /* Add tasks */
@@ -87,6 +89,9 @@ fieldset {
     font-size: 2em; }
 
   nav {
+    display: none; }
+
+  .hidden {
     display: none; } }
 
 /*# sourceMappingURL=main.css.map */

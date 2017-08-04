@@ -14,6 +14,7 @@
         var refFour = firebase.database().ref().child('tasks').child('Completed');
         var completedTasks= $firebaseArray(refFour);
         
+        var EXPTIME = 500000;
         
        
         return {
@@ -32,7 +33,8 @@
             },
             
             createdAt: function(task){
-                if(Date.now() - task.timeCreated > 5000){
+                console.log(Date.now() - task.timeCreated);
+                if(Date.now() - task.timeCreated > EXPTIME){
                     alert(task.task + " has expired");
                     
                     expTasks.$add(task);

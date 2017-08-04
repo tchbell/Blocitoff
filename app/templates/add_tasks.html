@@ -4,8 +4,8 @@
         <input type="text" id="name" ng-model= "home.taskName" placeholder= "Enter Task" required>
     </fieldset>
     <fieldset class="priority"> 
-        <select ng-model="home.priority">
-            <option value=" ">None</option>
+        <select ng-model="home.priority" required>
+            <option value="None">None</option>
             <option value= 2>High</option>
             <option value= 1>Medium</option>
             <option value= 0>Low</option>

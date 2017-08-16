@@ -14,7 +14,7 @@
         var refFour = firebase.database().ref().child('tasks').child('Completed');
         var completedTasks= $firebaseArray(refFour);
         
-        var EXPTIME = 500000;
+        var EXPTIME= 604800000; //Seven days
         
        
         return {

@@ -7,7 +7,7 @@ The application is deployed here [Blocitoff](https://blocitoff-tchbell.herokuapp
 
 ## Features
 * Users can create a set of tasks
-    *Each task can have a priority from low to high
+  * Each task can have a priority from low to high
 * If the tasks are not completed they will automatically expire after seven days.
 * Users can see which of their past tasks they have either completed or had expire.
 

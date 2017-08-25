@@ -1,8 +1,8 @@
-# Blocitoff
+# Mark-it-off
 
-Blocitoff is a self destructing ToDo list application. Users can create and delete tasks that will automatically expire after seven days.
+Mark-it-off is a self destructing ToDo list application. Users can create and delete tasks that will automatically expire after seven days.
 
-The application is deployed here [Blocitoff](https://blocitoff-tchbell.herokuapp.com/)
+The application is deployed here [Mark-it-off](https://blocitoff-tchbell.herokuapp.com/)
 
 
 ## Features
